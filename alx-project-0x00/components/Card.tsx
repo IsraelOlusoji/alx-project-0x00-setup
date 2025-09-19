@@ -16,6 +16,7 @@ const Card: React.FC = () => {
       <div className="flex gap-2 p-2 mt-2">
         <Pill title="Top Villa" />
         <Pill title="Self CheckIn" />
+        
         <Pill title="Free Reschedule" />
       </div>
       <div className="flex items-center justify-between">
