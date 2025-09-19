@@ -15,6 +15,7 @@ const shapeClasses = {
 
 const Button: React.FC<ButtonProps> = ({
   title,
+  styles,
   size = "medium",
   shape = "rounded-md",
   className = "",
@@ -22,10 +23,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       type="button"
-      className={`bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75
-         ${sizeClasses[size]}
-        ${shapeClasses[shape]}
-         ${className}`}
+      className={`${styles} ${sizeClasses[size]} ${shapeClasses[shape]} ${className}`}
     >
       {title}
     </button>
