@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 const Landing: React.FC = () => {
   return (
     <div className="p-8">
-      <h1 className="text-3xl font-bold mb-8 text-center">Landing Page</h1>
+      <h1 className="mb-8 text-3xl font-bold text-center">Landing Page</h1>
       
       {/* Card Component */}
       <div className="mb-12">
@@ -14,12 +14,12 @@ const Landing: React.FC = () => {
 
       {/* Button Examples Section */}
       <div className="space-y-8">
-        <h2 className="text-2xl font-semibold mb-6">Button Components</h2>
+        <h2 className="mb-6 text-2xl font-semibold">Button Components</h2>
         
         {/* Size Variations */}
         <div className="space-y-4">
           <h3 className="text-xl font-medium">Size Variations</h3>
-          <div className="flex gap-4 items-center">
+          <div className="flex items-center gap-4">
             <Button 
               title="Small Button" 
               styles="bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition-colors"
@@ -44,7 +44,7 @@ const Landing: React.FC = () => {
         {/* Shape Variations */}
         <div className="space-y-4">
           <h3 className="text-xl font-medium">Shape Variations</h3>
-          <div className="flex gap-4 items-center">
+          <div className="flex items-center gap-4">
             <Button 
               title="Rounded Small" 
               styles="bg-red-500 text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-opacity-75 transition-colors"
@@ -55,7 +55,7 @@ const Landing: React.FC = () => {
               title="Rounded Medium" 
               styles="bg-yellow-500 text-white hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-75 transition-colors"
               size="medium" 
-              shape="rounded-md" 
+              shape="rounded-lg" 
             />
             <Button 
               title="Rounded Full" 
@@ -94,7 +94,7 @@ const Landing: React.FC = () => {
         {/* Additional Style Examples */}
         <div className="space-y-4">
           <h3 className="text-xl font-medium">Additional Style Examples</h3>
-          <div className="flex gap-4 items-center flex-wrap">
+          <div className="flex flex-wrap items-center gap-4">
             <Button 
               title="Outline Style" 
               styles="border-2 border-gray-500 text-gray-700 hover:bg-gray-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 transition-colors"
