@@ -1,3 +1,3 @@
-export interface Pillprops{
+export interface PillProps{
     title: string;
 }
